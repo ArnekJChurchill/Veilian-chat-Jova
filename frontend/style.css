@@ -1,1 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Page */
+#loginPage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+#loginPage input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#loginPage button {
+  padding: 10px;
+  background-color: #1f80e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#loginPage button:hover {
+  background-color: #1663b5;
+}
+
+#loginMsg {
+  color: #ff6961;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Chat Page */
+#chatPage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+
+#userInfo {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#chatBox {
+  height: 400px;
+  overflow-y: auto;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+#chatBox div {
+  margin-bottom: 5px;
+}
+
+#messageInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: calc(100% - 90px);
+  font-size: 16px;
+}
+
+#sendBtn {
+  padding: 10px;
+  width: 70px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f80e0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#sendBtn:hover {
+  background-color: #1663b5;
+}
+
+/* Scrollbar styling */
+#chatBox::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chatBox::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}
+
+#chatBox::-webkit-scrollbar-track {
+  background-color: #222;
+}
 
